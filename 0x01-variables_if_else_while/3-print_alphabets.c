@@ -9,11 +9,14 @@ int main(void)
 	char upper = 'A';
 	char lower = 'a';
 
-	while (upper <= 'Z' && lower <= 'z')
+	while (lower <= 'z')
 	{
 		putchar(lower);
-		putchar(upper);
 		lower++;
+	}
+	while (upper <= 'Z')
+	{
+		putchar(upper);
 		upper++;
 	}
 	putchar('\n');
