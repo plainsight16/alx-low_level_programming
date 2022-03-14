@@ -7,6 +7,7 @@
 int main(void)
 {
 		int num = 0;
+
 		char lower = 'a';
 		
 		while (num < 10)
@@ -20,4 +21,3 @@ int main(void)
 		putchar('\n');
 		return (0);
 }
-
