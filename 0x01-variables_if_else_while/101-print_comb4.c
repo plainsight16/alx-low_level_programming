@@ -11,12 +11,16 @@ int main(void)
 
 	while (i < 1000)
 	{
+		l = i / 100; /* Hundreds */
 		j = (i / 10) % 10; /* Tens */
 		k = i % 10; /* Units */
 
-		putchar(i + '0');
-		putchar(j + '0');
-		putchar(k + '0');
+		if (j < k && k < l)
+		{
+			putchar(l + '0');
+			putchar(j + '0');
+			putchar(k + '0');
+		}
 
 		if (i < 800)
 		{
