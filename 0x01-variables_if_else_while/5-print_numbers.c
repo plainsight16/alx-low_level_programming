@@ -10,7 +10,7 @@ int main(void)
 
 	while (num < 10)
 	{
-		printf("%i",num++);
+		printf("%i", num++);
 	}
 	printf("\n");
 	return (0);
