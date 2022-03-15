@@ -4,8 +4,11 @@
 */
 void print_alphabet_x10(void)
 {
-	for (int i = 0; i < 10; i++)
+	int count = 0;
+
+	while (count < 10)
 	{
 		print_alphabet();
+		count++;
 	}
 }
