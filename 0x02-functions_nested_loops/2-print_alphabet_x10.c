@@ -5,13 +5,14 @@
 void print_alphabet_x10(void)
 {
 	int count = 0;
-	char lower = 'a';
 
 	while (count < 10)
 	{
+		char lower = 'a';
+
 		while (lower < 'z')
 			_putchar(lower++);
+		_putchar('\n');
 		count++;
 	}
-	_putchar('\n');
 }
