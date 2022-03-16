@@ -8,9 +8,10 @@ void print_times_table(int n)
 	if (n > 15 || n < 0)
 		return;
 
-	int i = 0;
+	int i;
 	int j;
 
+	i = 0;
 	while (i <= n)
 	{
 		j = 0;
@@ -23,11 +24,14 @@ void print_times_table(int n)
 				_putchar(',');
 				if ((i * j) >= 0 && (i * j) <= 9)
 				{
-					_putchar('   ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else
 				{
-					_putchar('  ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			j++;
