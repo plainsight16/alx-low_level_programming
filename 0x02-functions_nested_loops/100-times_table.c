@@ -18,8 +18,11 @@ void print_times_table(int n)
 		while (j <= n)
 		{
 			k = i * j;
-			if (k == 0)
+			if (j == 0)
+			{
 				_putchar(k + '0');
+				continue;
+			}
 			else if (k >= 0 && k < 10)
 			{
 				_putchar(',');
