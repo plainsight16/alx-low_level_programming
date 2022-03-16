@@ -14,6 +14,8 @@ void times_table(void)
 
 		while (multiplier < 10)
 		{
+			if (multiplier > 0)
+				_putchar(' ');
 			result = count * multiplier;
 			_putchar(result + '0');
 			if (multiplier < 9)
