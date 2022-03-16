@@ -9,8 +9,15 @@ int print_sign(int n)
 		int sign = 0;
 
 		if (n > 0)
+		{
 			sign = +1;
+			_putchar('+');
+		}
 		else if (n < 0)
+		{
 			sign = -1;
+			_putchar('-');
+		}
 		return (sign);
+		_putchar('0');
 }
