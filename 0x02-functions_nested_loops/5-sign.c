@@ -8,9 +8,9 @@ int print_sign(int n)
 {
 		int sign = 0;
 
-		if (sign > 0)
+		if (n > 0)
 			sign = 1;
-		else if (sign < 0)
+		else if (n < 0)
 			sign = -1;
 		return (sign);
 }
