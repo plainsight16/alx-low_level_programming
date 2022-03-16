@@ -21,6 +21,7 @@ void print_times_table(int n)
 			if (j == 0)
 			{
 				_putchar(k + '0');
+				j++;
 				continue;
 			}
 			else if (k >= 0 && k < 10)
