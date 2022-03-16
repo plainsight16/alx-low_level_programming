@@ -10,11 +10,9 @@ void print_times_table(int n)
 	i = 0;
 	if (n > 15 || n < 0)
 		return;
-
 	while (i <= n)
 	{
 		j = 0;
-
 		while (j <= n)
 		{
 			k = i * j;
