@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * _isaplha - checks if param is an alphabet
+  * _isalpha - checks if param is an alphabet
   * @c: An Integer param
   * Description: checks if param is an alphabet
   * Return: 1 if true, 0 if false
