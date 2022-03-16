@@ -5,11 +5,11 @@
 */
 void print_times_table(int n)
 {
-	if (n > 15 || n < 0)
-		return;
-
 	int i;
 	int j;
+
+	if (n > 15 || n < 0)
+		return;
 
 	i = 0;
 	while (i <= n)
