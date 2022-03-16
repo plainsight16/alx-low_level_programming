@@ -17,7 +17,13 @@ void times_table(void)
 			if (multiplier > 0)
 				_putchar(' ');
 			result = count * multiplier;
-			_putchar(result + '0');
+			if (result >= 0 && result < 10)
+				_putchar(result + '0');
+			else if (result >= 10 && result < 100)
+			{
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
+			}
 			if (multiplier < 9)
 			{
 				_putchar(',');
