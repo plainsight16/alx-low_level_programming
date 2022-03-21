@@ -5,12 +5,22 @@
 */
 void puts_half(char *s)
 {
-	int length = _strlen(s);
-	int half_length = length / 2;
+	int length;
+	int half_length;
+	int count = 0;
 
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+	length = count;
+	half_length = count / 2;
+	s = s - half-length;
 	while (half_length <= length)
 	{
-		_putchar(*(s + half_length));
+		_putchar(*s);
+		s++;
 		half_length++;
 	}
 	_putchar('\n');
