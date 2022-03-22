@@ -14,7 +14,7 @@ void puts_half(char *s)
 		count++;
 		s++;
 	}
-	length = count;
+	length = count - 1;
 	if (length % 2 != 0)
 		length += 1;
 	half_length = length / 2;
