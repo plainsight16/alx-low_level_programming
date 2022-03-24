@@ -12,11 +12,11 @@ char *leet(char *s)
 
 	while (s[i] != '\0')
 	{
-		for (int j = 0; j < sizeof(key); j++)
+		for (int j = 0; j < sizeof(key) / sizeof(char); j++)
 		{
 			if (s[i] == key[j] || s[i] == key[j] + 32)
 			{
-				s[i] = values[j];
+				s[i] = values[j] + 48;
 				break;
 			}
 		}
