@@ -8,7 +8,7 @@ char *cap_string(char *s)
 {
 	char delimeter[] = " \t\n,;.!?\"(){}";
 
-	if (s[0] >= 'a' && s[0] <= 'z')
+	if (s[0] >= 97 && s[0] <= 122)
 		s[0] = s[0] - 32;
 
 	int i = 0;
@@ -19,7 +19,7 @@ char *cap_string(char *s)
 		j = 0;
 		while (delimeter[j] != '\0')
 		{
-			if (s[i] == delimeter[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			if (s[i] == delimeter[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
 			{
 				s[i + 1] = s[i + 1] - 32;
 			}
