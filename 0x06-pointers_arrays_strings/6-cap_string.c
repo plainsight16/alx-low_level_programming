@@ -7,13 +7,11 @@
 char *cap_string(char *s)
 {
 	char delimeter[] = " \t\n,;.!?\"(){}";
+	int i, j;
 
 	if (s[0] >= 97 && s[0] <= 122)
 		s[0] = s[0] - 32;
-
-	int i = 0;
-	int j;
-
+	i = 0;
 	while (s[i] != '\0')
 	{
 		j = 0;
