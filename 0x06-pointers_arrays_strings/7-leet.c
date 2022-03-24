@@ -17,6 +17,7 @@ char *leet(char *s)
 			if (s[i] == key[j] || s[i] == key[j] + 32)
 			{
 				s[i] = values[j];
+				break;
 			}
 		}
 		i++;
