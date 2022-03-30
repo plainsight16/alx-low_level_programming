@@ -24,6 +24,8 @@ int length(char *s)
 */
 int helper(int i, char *s)
 {
+	int result = 1;
+
 	if (*s)
 	{
 		if (*s != s[length(s) - i])
@@ -32,10 +34,10 @@ int helper(int i, char *s)
 		}
 		else
 		{
-			helper(i + 1, s + 1);
+			result = helper(i + 1, s + 1);
 		}
 	}
-	return (1);
+	return (result);
 }
 /**
   * is_palindrome - checks if palindrome
