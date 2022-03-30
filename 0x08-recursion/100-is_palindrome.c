@@ -11,7 +11,7 @@ int length(char *s)
 	if (*s)
 	{
 		i = length(s + 1);
-		return (i + 1);
+		return (i += 1);
 	}
 	return (0);
 }
