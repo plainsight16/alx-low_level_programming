@@ -1,14 +1,32 @@
 #include "main.h"
 /**
+  * length - returns str len
+  * @s: char pointer
+  * Return: len
+*/
+int length(char *s)
+{
+	int i = 0;
+
+	if (*s)
+	{
+		i = length(s + 1);
+		return (i + 1);
+	}
+	return (0);
+}
+/**
   * helper - helps main func
   * @s: char pointer
+  * @i: integer
+  *
   * Return: 1 || 0
 */
 int helper(int i, char *s)
 {
 	if (*s)
 	{
-		if (*s != s[_strlen_recursion(s) - i])
+		if (*s != s[length(s) - i])
 		{
 			return (0);
 		}
