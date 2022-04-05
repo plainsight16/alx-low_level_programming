@@ -6,12 +6,12 @@
   * @s1: first string
   * @s2: second string
   *
-  * Return: s1
+  * Return: concat string
 */
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
+	int i;
 	int len1, len2;
 	char *concat;
 
