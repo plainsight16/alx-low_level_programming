@@ -78,6 +78,6 @@ char **strtow(char *str)
 			free(arr);
 		}
 	}
-	arr = helper(wordCount, len, str, s);
+	arr = helper(wordCount, len, str, arr);
 	return (arr);
 }
