@@ -46,7 +46,7 @@ char **strtow(char *str)
 	int i, j, k, len,  wordCount, size;
 	char **arr;
 
-	if (str == NULL)
+	if (str == NULL || str == "")
 		return (NULL);
 	len = 0;
 	wordCount = 0;
@@ -57,6 +57,8 @@ char **strtow(char *str)
 		if (str[len] != ' ' && str[len - 1] == ' ' && len != 0)
 			wordCount++;
 	}
+	if (wordCount == 0)
+		return (NULL);
 	arr = (char **)malloc(sizeof(char *) * wordCount + 1);
 	if (arr == NULL)
 		return (NULL);
