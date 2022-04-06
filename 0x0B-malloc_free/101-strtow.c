@@ -52,7 +52,7 @@ char **strtow(char *str)
 	wordCount = 0;
 	for (; str[len] != '\0'; len++)
 	{
-		if (str[len] == ' ')
+		if (str[0] != ' ')
 			wordCount++;
 		if (str[len] != ' ' && str[len - 1] == ' ' && len != 0)
 			wordCount++;
