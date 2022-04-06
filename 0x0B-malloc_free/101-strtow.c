@@ -43,7 +43,7 @@ char **helper(int wordCount, int len, char *str, char **arr)
  */
 char **strtow(char *str)
 {
-	int i, j, k, wordCount, size;
+	int i, j, k, len,  wordCount, size;
 	char **arr;
 
 	if (str == NULL)
@@ -71,7 +71,7 @@ char **strtow(char *str)
 				break;
 		}
 		arr[i] = (char *)malloc(sizeof(char) * size + 1);
-		if (s[i] == NULL)
+		if (arr[i] == NULL)
 		{
 			for (k = i - 1; k >= 0; k--)
 				free(arr[k]);
