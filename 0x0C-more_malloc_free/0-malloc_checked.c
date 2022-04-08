@@ -4,6 +4,7 @@
 /**
   * malloc_checked - checks malloc
   * @b: int param
+  * Return: void || pointer
 */
 void *malloc_checked(unsigned int b)
 {
