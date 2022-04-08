@@ -5,7 +5,7 @@
   * malloc_checked - checks malloc
   * @b: int param
 */
-void *malloc_checker(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	void *t;
 
