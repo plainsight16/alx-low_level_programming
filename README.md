@@ -1,1 +1,1 @@
-Hello World
+Structs in C
