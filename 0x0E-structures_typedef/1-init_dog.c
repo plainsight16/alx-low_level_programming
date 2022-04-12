@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * init-dog - initialize struct dog
+  * init_dog - initialize struct dog
   * @d: pointer to struct dog
   * @name: pointer to name
   * @age: age
